@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-padding {
+    padding: 10px;
+}
+
+.header-style {
+    border-top: 6px black double;
+    border-bottom: 6px black double;
+    background-image: url(../images/green_watercolor_background.jpg);
+    background-size: cover;
+    font-size: 18px;
+}
+#banner {
+    position: sticky;
+    top: 0;
+    background-image: url(../images/grass_background_short.png);
+    background-size: cover;
+    background-repeat: r
+    grid-area: banner;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 4.5vh;
+    color: ghostwhite;
+    color: black;
+    text-shadow: 1px 1px ghostwhite;
+    text-align: center;
+    font-family: Coronetscript, cursive;
+    font-weight: 800;
+    padding: .5vh;
+    border-bottom: 5px solid green;
+}
+
+
+.logo {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#banner-item {
+
+}
+
+#banner-center {
+
+}
+
+#logo-reverse {
+    transform: scaleX(-1);
+}
+
+#name {
+    text-shadow: 2px 2px ghostwhite; 
+}
+
+#web-name {
+    font-size: 2vh;
+}
+
+/* End of banner */
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "welcome"
+        "projects-header"
+        "projects";
+    grid-area: main;
+    background-image: url(../images/old_map.png);
+    font-weight: 550;
+    text-shadow: 1px 1px ghostwhite;
+}
+
+/* Start of welcome-section */
+
+#welcome-section {
+    height: 100vh;
+    grid-area: welcome;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "bio resume-container";
+}
+
+#bio {
+    font-family: ;
+    padding: 5%;
+    grid-area: bio;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#intro {
+    
+}
+
+#interests {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interests-list {
+    text-align: left;
+    list-style-type: square;
+}
+
+#resume-container {
+    padding-top: 20px;
+    grid-area: resume-container;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "resume"
+        "ext-navbar";
+}
+
+#resume {
+    grid-area: resume;
+    padding-top: 35px;
+}
+
+
+
+#resume-img {
+    max-height: 85%;
+    max-width: 85%;
+    /*
+    transition: transform 0.25s ease;
+    */
+}
+
+/*
+#resume-img:hover {
+    transform:scale(1.2);
+}
+*/
+
+
+#ext-navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: ext-navbar;
+    margin: auto;
+
+}
+
+.ext-link {
+    
+}
+
+.link-img {
+    padding: 10px;
+    width: 225px;
+    height: 100px;
+}
+
+/* End of welcome-section
+    
+Start of projects-section */
+
+#projects-header {
+    grid-area: projects-header;
+}
+
+#projects {
+    grid-area: projects;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3%;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.project-tile {;
+    padding: 5%;
+    background: yellow;
+    border: 2px dashed black;
+    border-radius: 15%;
+    height: 200px;
+    width: 200px;
+    padding-top: 35px;
+}
+
+.project-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-name {
+    font-weight: 900;
+}
+
+#sololearn-section {
+
+}
+
+#cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cert-tile {
+    border-radius: 15%;
+    height: 110px;
+    width: 110px;
+    border: 2px solid black;
+    background: yellow;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 12px; 
+}
+
+.cert-logo {
+    width: 50%;
+    height: 50%;
+    
+}
+
+.cert-name {
+
+}
+
+footer {
+    background-color: beige;
+    grid-area: footer;
+}
