@@ -19,16 +19,16 @@
 .header-style {
     border-top: 6px black double;
     border-bottom: 6px black double;
-    background-image: url(../images/green_watercolor_background.jpg);
+    background: silver;
     background-size: cover;
-    font-size: 18px;
+    font-size: 28px;
 }
+
 #banner {
     position: sticky;
     top: 0;
     background-image: url(../images/grass_background_short.png);
     background-size: cover;
-    background-repeat: r
     grid-area: banner;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -37,7 +37,7 @@
     font-size: 4.5vh;
     color: ghostwhite;
     color: black;
-    text-shadow: 1px 1px ghostwhite;
+    text-shadow: 2px 2px ghostwhite;
     text-align: center;
     font-family: Coronetscript, cursive;
     font-weight: 800;
@@ -80,15 +80,20 @@ main {
         "projects-header"
         "projects";
     grid-area: main;
-    background-image: url(../images/old_map.png);
-    font-weight: 550;
-    text-shadow: 1px 1px ghostwhite;
+    background-image: url(../images/3359.jpg); 
+    background-size: cover;
+
+    
 }
 
 /* Start of welcome-section */
 
 #welcome-section {
     height: 100vh;
+    font-family: georgia, sans-serif;
+    font-weight: 650;
+    text-shadow: 2px 2px black;
+    color: ghostwhite;
     grid-area: welcome;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -96,15 +101,20 @@ main {
         "bio resume-container";
 }
 
+.bio-header {
+    font-size: 40px;
+}
+
+
 #bio {
-    font-family: ;
     padding: 5%;
     grid-area: bio;
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 15%;
 }
 
 #intro {
@@ -112,13 +122,14 @@ main {
 }
 
 #interests {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .interests-list {
-    text-align: left;
     list-style-type: square;
+    list-style-position: inside;
+    margin: auto;
 }
 
 #resume-container {
@@ -136,11 +147,14 @@ main {
     padding-top: 35px;
 }
 
-
+#resume-header {
+    
+}
 
 #resume-img {
     max-height: 85%;
     max-width: 85%;
+    margin-top: 10px;
     /*
     transition: transform 0.25s ease;
     */
@@ -155,22 +169,24 @@ main {
 
 #ext-navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
     grid-area: ext-navbar;
     margin: auto;
 
 }
 
 .ext-link {
-    
+
 }
 
 .link-img {
-    padding: 10px;
+    margin-top: 10px;
     width: 225px;
     height: 100px;
+    border: 2px solid black;
+    border-radius: 15%;
 }
 
 /* End of welcome-section
@@ -213,7 +229,7 @@ Start of projects-section */
 
 }
 
-#cert-container {
+.cert-container {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
