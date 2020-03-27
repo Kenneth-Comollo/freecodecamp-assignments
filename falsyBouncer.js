@@ -2,7 +2,7 @@
 //Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
 
 function bouncer(arr) {
-    newArr = arr.filter(Boolean)
+    var newArr = arr.filter(Boolean)
     console.log(newArr);  
     return newArr;
 }
