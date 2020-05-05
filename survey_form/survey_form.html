@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form - Project 2</title>
+        <meta name="author" content="Kenneth Comollo">
+        <meta name="description" content="Top=Secret Pizza Survey">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="/survey_form_css.css">
+    </head>
+
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey Form for freecodecamp.org Responsive Web Design Project 2">
+    <link rel="stylesheet" href="survey_form_css/survey_form.css">
+</head>
+
+<body>
+    <header>---------- Clandestine Pies Inc. ----------</header>
+
+<main>
+
+    <div id="title-container">
+        <img src="images/pizza.jpg" class="pizza" alt="pizza photo">
+        <h1 id="title">- Top Secret -<br>Pizza Survey</h1>
+        <img src="images/pizza.jpg" class="pizza" alt="pizza photo">
+    </div>
+
+    <div id="warning-container">
+        <img src="images/caution.jpg" id="caution-left" alt="caution-sign">
+        <p id="description">WARNING: This survey will self-destruct upon completion.</p>
+        <img src="images/caution.jpg" id="caution-right" alt="caution-sign">
+    </div>
+
+    <br><br>
+
+    <div id="form-container">
+    <form action="/submit-to-this-url" id="survey-form">
+
+        <label id="name-label" for="name">Codename/Alias (required)</label>
+            <br>
+            <input id="name" class="form-field" type="text" placeholder=" Enter your codename here" required>
+            <br><br>
+        <label id="email-label" for="email">Spy Email (required)</label>
+            <br>
+            <input id="email" class="form-field" type="email" placeholder=" Enter your spy email here" required>
+        <br><br>
+
+        <label id="number-label" for="number">Number of Pizzas Legally Allowed in Your State:</label>
+            <br>
+            <input id="number" class="form-field" type="number" min="1" max="999" maxlength="3" placeholder=" Enter number of pizzas">
+        <br><br>
+
+
+        <label id="dropdown-label" for="dropdown">What is the best type of pizza?</label>
+        <br>
+        <select id="dropdown" class="form-field">
+            <option value="" id="dropdown-placeholder" disabled selected hidden>&nbsp;Choose from dropdown</option>
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepporoni</option>
+            <option value="the-works">The Works</option>
+            <option value="meat-lovers">Meat Lovers</option>
+            <option value="ice-cream">Ice Cream</option>
+            <option value="anchovy">Anchovy</option>
+            <option value="ketchup-cardboard">Ketchup and Cardboard</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+
+        <h4 id="radio-label" for="radio">When is the best time to eat pizza?</h4>
+        <div id="radio">
+            <label for="morning" class="radio-selection">
+                <input id="morning" value="morning" type="radio" name="best-time">Morning
+            </label>
+            <br>
+            <label for="afternoon" class="radio-selection">
+                <input id="afternoon" value="afternoon" type="radio" name="best-time">Afternoon
+            </label>
+            <br>
+            <label for="nighttime" class="radio-selection">
+                <input id="nighttime" value="nighttime" type="radio" name="best-time">Night Time
+            </label>
+            <br>
+            <label for="24/7" class="radio-selection">
+                <input id="24/7" value="24/7" type="radio" name="best-time">Twenty-four Seven
+            </label>
+            <br>
+            <label for="turbo-time" class="radio-selection">
+                   <input id="turbo-time" value="turbo-time" type="radio" name="best-time">Turbo Time
+            </label>
+        </div>
+        <br><br>
+
+
+        <h4 id="checkbox-label" for="checkbox">What are your favorite things to do with pizza? (Check all that apply)</h4>
+        <div id="checkbox-list">
+            <label for="eat">
+                <input id="eat" value="eat" type="checkbox" name="favorite">Eat it
+            </label>
+            <br>
+            <label for="gift">
+                <input id="gift" value="gift" type="checkbox" name="favorite">Gift it
+            </label>
+            <br>
+            <label for="talk-to">
+                <input id="talk-to" value="talk-to" type="checkbox" name="favorite">Talk to it
+            </label>
+            <br>
+            <label for="dance">
+                <input id="dance" value="dance" type="checkbox" name="favorite">Dance with it
+            </label>
+            <br>
+            <label for="throw">
+                <input id="throw" value="throw" type="checkbox" name="favorite">Throw it on the roof
+            </label>
+            <br>
+            <label for="jump-on">
+                <input id="jump-on" value="jump-on" type="checkbox" name="favorite">Jump on it
+            </label>
+            <br>
+            <label for="sabotage">
+                <input id="sabotage" value="sabotage" type="checkbox" name="favorite">Sabotage it
+            </label>
+            <br>
+            <label for="movies">
+                <input id="movies" value="movies" type="checkbox" name="favorite">Go to the movies with it
+            </label>
+            <br>
+            <label for="get-married">
+                <input id="get-married" value="get-married" type="checkbox" name="favorite">Get married and have kids with it
+            </label>
+            <br>
+        </div>
+        <br><br>
+
+        <label for="commments" id="comments-heading">Any suggestions on how to covertly secure the heavily guarded pizza microfilm?</label>
+        <br>
+        <textarea id="comments" name="comments" maxlength="400" rows="10" cols="105" placeholder="Enter suggestions and comments here... They better be good... Or else..."></textarea>
+        <br><br>
+
+
+        <button type="submit" id="submit">Submit and Self-Destruct Survey</button>
+
+    </form>
+    </div>
+</main>
+</body>
+
+
+</html>

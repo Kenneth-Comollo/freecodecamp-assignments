@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: lightgray;
+}
+
+header {
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#title-container {
+    display: flex;
+    border-color: red;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 10%;
+    justify-content: space-around;
+}
+
+#title {
+    font-size: 44px;
+    padding: 0px;
+    font-family: monospace;
+
+}
+
+.pizza {
+    border-radius: 90%;
+    height: 50%;
+    width: 50%;
+}
+
+#warning-container {
+    position: relative;
+    top: 20px;
+    display: flex;
+    width: 65%;
+    height:;
+    border: 5px dashed red;
+    border-style: dashed;
+    margin: auto;
+}
+
+#description {
+    font-size: 16px;
+    font-family: cursive;
+    margin: auto;
+}
+
+.caution {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+#form-container {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.form-field {
+    width: 60%;
+    height: 24px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+#dropdown {
+    height: 31px;
+    font-size: 18px;
+}
+
+#radio {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+#checkbox-list {
+    display: inline-block;
+    text-align: left;
+}
+
+#comments-heading {
+    font-weight: bold;
+}
+
+#comments {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+}
+
+#submit {
+    width: 50%;
+    height: 40px;
+    font-weight: 750;
+    background: red;
+    color: lightgray;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
