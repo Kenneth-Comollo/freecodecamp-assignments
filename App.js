@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Header from "./Header"
-import Todos from "./Todos"
+import "./bootstrap.min.css";
+import "./materialize.min.css";
+import Header from "./Header";
+import Todos from "./Todos";
 
 class App extends Component {
   state = {
